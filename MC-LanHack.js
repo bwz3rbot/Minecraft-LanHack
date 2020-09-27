@@ -11,7 +11,7 @@ fs.readFile(path + filename, (err, data) => {
     let parsed = JSON.parse(replaced);
     let prettyPrinted = JSON.stringify(parsed, null, 2)
 
-    fs.writeFile(path + "test.json", prettyPrinted, err => {
+    fs.writeFile(path + filename, prettyPrinted, err => {
         console.log(err)
     })
 })
